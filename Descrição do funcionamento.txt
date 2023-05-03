@@ -1,0 +1,4 @@
+A placa ESP32 neste projeto será responsável pela conexão com a internet via Wi-Fi e assim possibilitar a comunicação através do protocolo MQTT. 
+O sensor DHT22 coletará e enviará os dados do clima a placa que transmitirá em tempo real ao Smartphone do usuário e será visualizada através do aplicativo MQTT Dash.
+Através do aplicativo também será possível alterar o threshold para acionamento do LED de alerta e assim verificar o status atual, 
+verde para OK, ou vermelho para não OK. Será utilizada a linguagem de programação Python para desenvolvimento da lógica de funcionamento do protótipo.

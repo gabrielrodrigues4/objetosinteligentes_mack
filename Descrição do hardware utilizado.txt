@@ -1,0 +1,24 @@
+- A plataforma de prototipagem que será utilizada neste projeto será ESP32.
+O ESP32 é um dispositivo ioT (Internet das Coisas) que consiste de um microprocessador de baixa potência dual core Tensilica Xtensa 32-bit LX6 com suporte embutido à rede WiFi, Bluetooth v4.2 e memória flash integrada.
+Essa arquitetura permite que ele possa ser programado de forma independente, sem a necessidade de outras placas microcontroladoras
+como o Arduino, por exemplo. Dentre as principais características deste dispositivo, podemos citar: baixo consumo de energia, alto desempenho de potência, 
+amplificador de baixo ruído, robustez, versatilidade e confiabilidade.
+
+- LED 5mm vermelho, verde e azul (RGB).
+O LED é utilizado para expor uma das três cores (Vermelho, Azul e Verde)
+ou as combinações possíveis entre elas. Possui 5mm de espessura.
+
+- Sete cabos jumper
+Um jumper wire (também conhecido como jumper, jumper wire, DuPont wire) é um fio elétrico, com um conector ou pino em cada extremidade
+(ou às vezes sem eles - simplesmente "estanhado"), que é normalmente usado para interconectar os componentes de uma protoboard ou outro protótipo ou circuito de teste,
+internamente ou com outros equipamentos ou componentes, sem solda.
+
+- DHT22 – Sensor de Umidade e Temperatura
+O sensor DHT22, também chamado de AM2302, integra um sensor de umidade e um sensor de temperatura em um só módulo. 
+Ele será utilizado para coletar as informações úteis ao usuário.
+
+- 3 resistores.
+Resistores são dispositivos elétricos usados para limitar a passagem da corrente elétrica.
+
+- Smartphone.
+Um smartphone é um celular com funcionalidades avançadas que podem ser utilizadas por meio de aplicativos.

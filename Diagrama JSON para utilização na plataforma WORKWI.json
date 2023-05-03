@@ -1,0 +1,58 @@
+{
+    "version": 1,
+    "author": "Uri Shaked",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -46.25, "left": -108.37, "attrs": {} },
+      {
+        "type": "wokwi-dht22",
+        "id": "dht1",
+        "top": -32.2,
+        "left": 40.16,
+        "attrs": { "humidity": "73.5", "temperature": "15.6" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 87.89,
+        "left": -188.93,
+        "attrs": { "value": "220" }
+      },
+      {
+        "type": "wokwi-rgb-led",
+        "id": "rgb1",
+        "top": -69.53,
+        "left": -304.81,
+        "attrs": { "common": "cathode" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r2",
+        "top": 75.22,
+        "left": -189.72,
+        "attrs": { "value": "220" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r3",
+        "top": 59.38,
+        "left": -190.71,
+        "attrs": { "value": "220" }
+      }
+    ],
+    "connections": [
+      [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+      [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+      [ "dht1:SDA", "esp:D15", "green", [ "v0" ] ],
+      [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+      [ "r1:2", "esp:D13", "green", [ "v0" ] ],
+      [ "rgb1:COM", "esp:GND.2", "black", [ "v0" ] ],
+      [ "rgb1:G", "r1:1", "green", [ "v0" ] ],
+      [ "rgb1:B", "r3:1", "blue", [ "v0" ] ],
+      [ "r3:2", "esp:D27", "blue", [ "v0" ] ],
+      [ "rgb1:R", "r2:1", "red", [ "v0" ] ],
+      [ "r2:2", "esp:D12", "red", [ "v0" ] ]
+    ],
+    "dependencies": {}
+  }
